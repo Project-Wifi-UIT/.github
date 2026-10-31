@@ -42,6 +42,10 @@ Interfaces, hardware choices, and data formats are still evolving. Refer to the 
 
 The project is under active development. Hardware experiments, processing logic, interfaces, and documentation may change as the team improves repeatability and evaluates environmental limitations. Demonstrations and early observations should not be treated as evidence of clinical performance or production readiness.
 
+## Basic API liveness
+
+[Check API liveness](https://api.uitenglishclub.link/health) — a basic endpoint check, not a clinical or full infrastructure status dashboard.
+
 ## Safety and privacy boundaries
 
 - Treat outputs as experimental signals, never as diagnoses, treatment recommendations, or emergency alerts.
