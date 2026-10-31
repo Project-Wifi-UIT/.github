@@ -1,0 +1,42 @@
+name: Feature request
+description: Suggest a focused improvement to the project.
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please describe a research or engineering need without including patient data or other sensitive information.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or opportunity
+      description: What user, contributor, experiment, or maintenance need would this address?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: Describe the behavior, interface, or documentation you would like to see.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Explain other approaches or workarounds you considered.
+  - type: textarea
+    id: validation
+    attributes:
+      label: Validation and limitations
+      description: Describe how the change could be tested and any safety, privacy, or prototype limitations.
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety and data confirmation
+      options:
+        - label: I have not included patient data, credentials, tokens, private keys, or other sensitive information.
+          required: true
+        - label: I understand this project is experimental and not a clinical or diagnostic system.
+          required: true

@@ -1,0 +1,63 @@
+name: Bug report
+description: Report a reproducible problem in the project.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please remove secrets and any patient or other sensitive information before submitting.
+  - type: input
+    id: repository
+    attributes:
+      label: Affected repository or component
+      description: Identify the repository, firmware, application, or documentation area.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Commit, version, or hardware revision
+      description: Provide the relevant commit, release, or ESP32/setup revision.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment and setup
+      description: Include OS, runtime, hardware, network, and experiment setup details as appropriate.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Give the smallest reliable sequence that demonstrates the problem.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or screenshots
+      description: Remove secrets and sensitive data. Use synthetic or de-identified examples only.
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety and data confirmation
+      options:
+        - label: I have removed patient data, credentials, tokens, private keys, and other sensitive information.
+          required: true
+        - label: This report does not claim that the prototype is a clinical or diagnostic system.
+          required: true
